@@ -9,9 +9,16 @@ Create by: Florent
 
 from serial import *
 
-with Serial(port = "/dev/ttyUSB0", baudrate = 9600, timeout = 1) as port_serie:
+with Serial(port = "/dev/ttyUSB0", baudrate = 9600, timeout = 3) as port_serie:
 	if port_serie.isOpen():	# Vérification de l'ouverture du port série
 		print("Port ouvert et connecter avec succés !!!")
-		while True:	# Boucle de test. A retirer ???
-			ligne = port_serie.readline()	# Lecture des données présentes sur le port série
-			print (ligne)	# Affichage des données du port série
+		data = port_serie.readline()
+		print(data)
+		print(type(data))
+		"""while True:	# Boucle de test. A retirer ???
+			donnes = port_serie.readline()	# Lecture des données présentes sur le port série
+			print(donnes)
+			if donnes == "linux":
+				print("L'OS est Linux")
+			else:
+				print("L'OS est différent")"""
