@@ -14,7 +14,12 @@ with Serial(port = "/dev/ttyUSB0", baudrate = 9600, timeout = 3) as port_serie:
 		print("Port ouvert et connecter avec succés !!!")
 		data = port_serie.readline()
 		print(data)
-		print(type(data))
+		donnes = data.decode("utf-8")
+		print(donnes)
+		if donnes == "Linux":
+			print("L'OS est Linux")
+		else:
+			print("L'OS est différent")
 		"""while True:	# Boucle de test. A retirer ???
 			donnes = port_serie.readline()	# Lecture des données présentes sur le port série
 			print(donnes)
