@@ -12,11 +12,11 @@ from serial import *
 with Serial(port = "/dev/ttyUSB0", baudrate = 9600, timeout = 3) as port_serie:
 	if port_serie.isOpen():	# Vérification de l'ouverture du port série
 		print("Port ouvert et connecter avec succés !!!")
-		data = port_serie.readline()
+		data = port_serie.readline(1)
 		print(data)
 		donnes = data.decode("utf-8")
 		print(donnes)
-		if donnes == "Linux":
+		if donnes == "L":
 			print("L'OS est Linux")
 		else:
 			print("L'OS est différent")
