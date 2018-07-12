@@ -6,24 +6,20 @@ Date: 04/07/2018
 Create by: Florent
 """
 
-
+import os
 from serial import *
 
-with Serial(port = "/dev/ttyUSB0", baudrate = 9600, timeout = 3) as port_serie:
+with Serial(port = "/dev/ttyUSB0", baudrate = 9600, timeout = 0.2) as port_serie:
 	if port_serie.isOpen():	# Vérification de l'ouverture du port série
 		print("Port ouvert et connecter avec succés !!!")
-		data = port_serie.readline(1)
-		print(data)
-		donnes = data.decode("utf-8")
-		print(donnes)
-		if donnes == "L":
-			print("L'OS est Linux")
-		else:
-			print("L'OS est différent")
-		"""while True:	# Boucle de test. A retirer ???
-			donnes = port_serie.readline()	# Lecture des données présentes sur le port série
-			print(donnes)
-			if donnes == "linux":
-				print("L'OS est Linux")
+		while True:
+			progBouton1 = input("Saisissez le nom du programme à attitrer au bouton 1 (ou son chemin)")
+			data = port_serie.readline(1)
+			donnes = data.decode("utf-8")
+			if donnes == "1":
+				os.system(progBouton1)
 			else:
-				print("L'OS est différent")"""
+				pass
+	else:
+		print("Port non trouver")
+

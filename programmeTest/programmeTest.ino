@@ -11,17 +11,35 @@
  * boutonProg9
  */
 
+ int pinBouton = 2, pinLedRouge = 5, pinLedVerte = 4;
+ boolean testBouton = true;
+ 
 void setup() {
   Serial.begin(9600);
+  pinMode(pinLedRouge, OUTPUT);
+  pinMode(pinLedVerte, OUTPUT);
+  pinMode(pinBouton, INPUT_PULLUP);
   
 }
  void loop() {
-  //int valeurCapteur = analogRead(capteur);
-  //float temperature = valeurCapteur * (5.0 / 1023.0 * 100.0);
-  //Serial.println(temperature);
-  //Serial.println(" C ");
-  Serial.println("L");
-  delay(3000);
+  //Serial.println(testBouton);
+  //Serial.println("l");
+  //delay(2000);
+  if (testBouton) {
+    digitalWrite(pinLedRouge, HIGH);
+    digitalWrite(pinLedVerte, LOW);
+  }
+  else {
+    digitalWrite(pinLedRouge, LOW);
+    digitalWrite(pinLedVerte, HIGH);
+  }
+  boolean etatBouton = digitalRead(pinBouton);
+  //Serial.println(etatBouton);
+  if (!etatBouton) {
+    digitalWrite(pinLedRouge, LOW);
+    digitalWrite(pinLedVerte, HIGH);
+    Serial.println("1");
+  }
+  delay(200);
   Serial.flush();
 }
-
