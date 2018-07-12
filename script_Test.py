@@ -13,7 +13,7 @@ with Serial(port = "/dev/ttyUSB0", baudrate = 9600, timeout = 0.2) as port_serie
 	if port_serie.isOpen():	# Vérification de l'ouverture du port série
 		print("Port ouvert et connecter avec succés !!!")
 		while True:
-			progBouton1 = input("Saisissez le nom du programme à attitrer au bouton 1 (ou son chemin)")
+			progBouton1 = input("Saisissez le nom du programme à attitrer au bouton 1 (ou son chemin): \n")
 			data = port_serie.readline(1)
 			donnes = data.decode("utf-8")
 			if donnes == "1":
