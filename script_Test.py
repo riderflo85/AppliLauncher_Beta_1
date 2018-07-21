@@ -5,9 +5,11 @@ Title: Script de communication entre Arduino et PC (python)
 Date: 04/07/2018
 Create by: Florent
 """
-
+import json
 import os
 from serial import *
+
+
 
 with Serial(port = "/dev/ttyUSB1", baudrate = 9600, timeout = 0.2) as port_serie:
 	if port_serie.isOpen():	# Vérification de l'ouverture du port série

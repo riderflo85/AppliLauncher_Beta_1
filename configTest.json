@@ -1,7 +1,5 @@
 {
-   "test0": "valeur01",
-   "test1": {
-      "test2": 56,
-      "test3": 3
-   }
+   "bouton1": "NA",
+   "bouton2": "NA",
+   "bouton3": "NA"
 }
