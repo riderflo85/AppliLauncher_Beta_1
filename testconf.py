@@ -53,6 +53,6 @@ if creation == "oui" or creation == "o":
 	with open('configTest.json', 'w') as fichierconfig:
 		json.dump(data, fichierconfig, indent = 3, ensure_ascii = False)
 	print(data)
-
+# Fermeture du script si la réponse est non ou différente
 elif creation != "non" or creation != "n":
 	sys.exit()
