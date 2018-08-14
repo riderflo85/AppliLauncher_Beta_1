@@ -21,8 +21,10 @@ with Serial(port = "/dev/ttyUSB1", baudrate = 9600, timeout = 0.2) as port_serie
 		while True:
 			data = port_serie.readline(2)
 			donnes = data.decode("utf-8")
-			if donnes == "1":
-				
+			if donnes == "wi":
+				if donnes == "p1":
+					
+					pass
 				os.system(progBouton1)
 			else:
 				pass
