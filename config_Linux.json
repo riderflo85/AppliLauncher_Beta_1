@@ -1,1 +1,24 @@
-a
+{
+   "profil_1": {
+      "bouton1": "chrome",
+      "bouton2": "putty",
+      "bouton3": "discord",
+      "bouton4": "NA",
+      "bouton5": "NA",
+      "bouton6": "NA",
+      "bouton7": "NA",
+      "bouton8": "NA",
+      "bouton9": "NA"
+   },
+   "profil_2": {
+      "bouton1": "sublimeText3",
+      "bouton2": "steam",
+      "bouton3": "blender",
+      "bouton4": "spotify",
+      "bouton5": "cura",
+      "bouton6": "terminal",
+      "bouton7": "NA",
+      "bouton8": "NA",
+      "bouton9": "NA"
+   }
+}

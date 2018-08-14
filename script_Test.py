@@ -22,12 +22,14 @@ with Serial(port = "/dev/ttyUSB1", baudrate = 9600, timeout = 0.2) as port_serie
 			data = port_serie.readline(2)
 			donnes = data.decode("utf-8")
 			if donnes == "wi":
+				os.system(python3 configure_Profile_Win.py)
 				if donnes == "p1":
-					
-					pass
-				os.system(progBouton1)
-			else:
-				pass
+					pass:
+				
+			elif donnes == "li":
+				os.system(python3 configure_Profile_Lin.py)
+				if donnes == "p1"
+					pass:
 	else:
 		print("Port non trouver")
 
