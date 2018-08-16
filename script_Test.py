@@ -1,35 +1,13 @@
 #coding:utf-8
 
 """
-Title: Script de communication entre Arduino et PC (python)
+Title: Script pour faire des tests
 Date: 04/07/2018
 Create by: Florent
 """
 import json
-import os
-from serial import *
+import sys
 
-
-
-with Serial(port = "/dev/ttyUSB1", baudrate = 9600, timeout = 0.2) as port_serie:
-	# Vérification de l'ouverture du port série
-	if port_serie.isOpen():
-		print("Port ouvert et connecter avec succés !!!")
-		progBouton1 = input("Saisissez le nom du programme à attitrer au bouton 1 (ou son chemin): \n")
-		
-		 # Lire le contenue du port série | l'argument 1 permet de lire uniquement UN seul caractère du port série | pour éviter les erreurs avec les retours de ligne utiliser readline().rstrip('\n')
-		while True:
-			data = port_serie.readline(2)
-			donnes = data.decode("utf-8")
-			if donnes == "wi":
-				os.system(python3 configure_Profile_Win.py)
-				if donnes == "p1":
-					pass:
-				
-			elif donnes == "li":
-				os.system(python3 configure_Profile_Lin.py)
-				if donnes == "p1"
-					pass:
-	else:
-		print("Port non trouver")
-
+configFile = open('config_Windows.json', 'r')
+data_configFile = json.load(configFile)
+print(data_configFile)
