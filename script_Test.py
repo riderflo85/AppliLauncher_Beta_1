@@ -6,8 +6,8 @@ Date: 04/07/2018
 Create by: Florent
 """
 import json
-import sys
 
-configFile = open('config_Windows.json', 'r')
+configFile = open('config_Linux.json', 'r')
 data_configFile = json.load(configFile)
 print(data_configFile)
+print(type(data_configFile))
