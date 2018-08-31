@@ -11,7 +11,7 @@ from serial import *
 
 
 
-with Serial(port = "/dev/ttyUSB1", baudrate = 9600, timeout = 0.2) as port_serie:
+with Serial(port = "/dev/ttyUSB0", baudrate = 115200, timeout = 0.2) as port_serie:
 	# Vérification de l'ouverture du port série
 	if port_serie.isOpen():
 		print("Port ouvert et connecter avec succés !!!")
@@ -21,7 +21,7 @@ with Serial(port = "/dev/ttyUSB1", baudrate = 9600, timeout = 0.2) as port_serie
 			data = port_serie.readline(2)
 			donnees = data.decode("utf-8")
 			if donnees == "wi":
-				os.system(python3 configure_Profile_Win.py)
+				os.system("python3 configure_Profile_Win.py")
 				configFile = open('config_Windows.json', 'r')
 				data_configFile = json.load(configFile)
 
@@ -67,11 +67,11 @@ with Serial(port = "/dev/ttyUSB1", baudrate = 9600, timeout = 0.2) as port_serie
 					
 				
 			elif donnees == "li":
-				os.system(python3 configure_Profile_Lin.py)
+				os.system("python3 configure_Profile_Lin.py")
 				configFile = open('config_Linux.json', 'r')
 				data_configFile = json.load(configFile)
 
-				if donnees == "p1"
+				if donnees == "p1":
 					if donnees == "b1":
 						os.system(data_configFile["profil_1"]["bouton1"])
 					elif donnees == "b2":

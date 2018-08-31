@@ -61,7 +61,7 @@ boolean etatBoutonProfil;
 
 // Function d'initialisation
 void setup() {
-  Serial.begin(9600); // A MODIFIER AVEC LA VALEUR DE L'ARDUINO MEGA 2560 REV3
+  Serial.begin(115200); // A MODIFIER AVEC LA VALEUR DE L'ARDUINO MEGA 2560 REV3
   
   // Initialisation des pins bouton en INPUT_PULLUP
   for (int i = 22; i < 33; i++) {
