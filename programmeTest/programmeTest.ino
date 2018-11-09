@@ -12,7 +12,7 @@
  */
 
  int pinBouton = 2, pinLedRouge = 5, pinLedVerte = 4;
- boolean testBouton = true;
+ bool testBouton = true;
  
 void setup() {
   Serial.begin(9600);
@@ -33,7 +33,7 @@ void setup() {
     digitalWrite(pinLedRouge, LOW);
     digitalWrite(pinLedVerte, HIGH);
   }
-  boolean etatBouton = digitalRead(pinBouton);
+  bool etatBouton = digitalRead(pinBouton);
   //Serial.println(etatBouton);
   if (!etatBouton) {
     digitalWrite(pinLedRouge, LOW);

@@ -1,14 +1,12 @@
- /*
-    AppliLauncher:
- Version: 1.0
- Date de création: 04/07/2018
- Creer par: GRENAILLE Florent
- Licence: OpenSource/Libre
- Source: https://github.com/riderflo85/AppliLauncher_Beta_1
- 
- */
- 
- // Déclaration des variables
+/*
+   AppliLauncher:
+Version: 1.0
+Date de création: 04/07/2018
+Creer par: GRENAILLE Florent
+Licence: OpenSource/Libre
+Source: https://github.com/riderflo85/AppliLauncher_Beta_1
+*/
+// Déclaration des variables
 int pinBoutonOs = 22;
 int pinBoutonProfil = 23;
 int pinBoutonProg1 = 24;
@@ -44,20 +42,22 @@ int pinLedRougeOsWin = 5;
 int pinLedJauneOsLin = 6;
 int profilSelectionner = 1;
 String osSelectionner = "Windows";
-boolean verifOsLinux = false;
-boolean verifOsWindows = true;
-boolean testBouton = true;
-boolean etatBouton1;
-boolean etatBouton2;
-boolean etatBouton3;
-boolean etatBouton4;
-boolean etatBouton5;
-boolean etatBouton6;
-boolean etatBouton7;
-boolean etatBouton8;
-boolean etatBouton9;
-boolean etatBoutonOs;
-boolean etatBoutonProfil;
+bool verifOsLinux = false;
+bool verifOsWindows = true;
+bool testBouton = true;
+// Définition des variables d'état des bouton poussoir avec initialisation a false donc bouton relacher
+bool etatBouton1 = false;
+bool etatBouton2 = false;
+bool etatBouton3 = false;
+bool etatBouton4 = false;
+bool etatBouton5 = false;
+bool etatBouton6 = false;
+bool etatBouton7 = false;
+bool etatBouton8 = false;
+bool etatBouton9 = false;
+bool etatBoutonOs = false;
+bool etatBoutonProfil = false;
+
 
 // Function d'initialisation
 void setup() {
@@ -65,7 +65,7 @@ void setup() {
   
   // Initialisation des pins bouton en INPUT_PULLUP
   for (int i = 22; i < 33; i++) {
-    pinMode(i, INPUT_PULLUP);
+    pinMode(i, INPUT_PULLUP); // A TESTER POUR VOIR SI UNE RÉSISTANCE PHYSIQUE SERAIT MIEUX OU PAS !!!!
   }
   // Initialisation des pins led boutonProg
   for (int t = 33; t < 51; t++) {
