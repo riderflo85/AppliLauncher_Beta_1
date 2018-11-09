@@ -116,28 +116,28 @@ void setup() {
         if (!etatBouton1) {
           Serial.println("b1");
         }
-        if (!etatBouton2) {
+        else if (!etatBouton2) {
           Serial.println("b2");
         }
-        if (!etatBouton3) {
+        else if (!etatBouton3) {
           Serial.println("b3");
         }
-        if (!etatBouton4) {
+        else if (!etatBouton4) {
           Serial.println("b4");
         }
-        if (!etatBouton5) {
+        else if (!etatBouton5) {
           Serial.println("b5");
         }
-        if (!etatBouton6) {
+        else if (!etatBouton6) {
           Serial.println("b6");
         }
-        if (!etatBouton7) {
+        else if (!etatBouton7) {
           Serial.println("b7");
         }
-        if (!etatBouton8) {
+        else if (!etatBouton8) {
           Serial.println("b8");
         }
-        if (!etatBouton9) {
+        else if (!etatBouton9) {
           Serial.println("b9");
         }
       }
@@ -160,28 +160,28 @@ void setup() {
         if (!etatBouton1) {
           Serial.println("b1");
         }
-        if (!etatBouton2) {
+        else if (!etatBouton2) {
           Serial.println("b2");
         }
-        if (!etatBouton3) {
+        else if (!etatBouton3) {
           Serial.println("b3");
         }
-        if (!etatBouton4) {
+        else if (!etatBouton4) {
           Serial.println("b4");
         }
-        if (!etatBouton5) {
+        else if (!etatBouton5) {
           Serial.println("b5");
         }
-        if (!etatBouton6) {
+        else if (!etatBouton6) {
           Serial.println("b6");
         }
-        if (!etatBouton7) {
+        else if (!etatBouton7) {
           Serial.println("b7");
         }
-        if (!etatBouton8) {
+        else if (!etatBouton8) {
           Serial.println("b8");
         }
-        if (!etatBouton9) {
+        else if (!etatBouton9) {
           Serial.println("b9");
         }
       }
@@ -212,28 +212,28 @@ void setup() {
         if (!etatBouton1) {
           Serial.println("b1");
         }
-        if (!etatBouton2) {
+        else if (!etatBouton2) {
           Serial.println("b2");
         }
-        if (!etatBouton3) {
+        else if (!etatBouton3) {
           Serial.println("b3");
         }
-        if (!etatBouton4) {
+        else if (!etatBouton4) {
           Serial.println("b4");
         }
-        if (!etatBouton5) {
+        else if (!etatBouton5) {
           Serial.println("b5");
         }
-        if (!etatBouton6) {
+        else if (!etatBouton6) {
           Serial.println("b6");
         }
-        if (!etatBouton7) {
+        else if (!etatBouton7) {
           Serial.println("b7");
         }
-        if (!etatBouton8) {
+        else if (!etatBouton8) {
           Serial.println("b8");
         }
-        if (!etatBouton9) {
+        else if (!etatBouton9) {
           Serial.println("b9");
         }
       }
@@ -256,28 +256,28 @@ void setup() {
         if (!etatBouton1) {
           Serial.println("b1");
         }
-        if (!etatBouton2) {
+        else if (!etatBouton2) {
           Serial.println("b2");
         }
-        if (!etatBouton3) {
+        else if (!etatBouton3) {
           Serial.println("b3");
         }
-        if (!etatBouton4) {
+        else if (!etatBouton4) {
           Serial.println("b4");
         }
-        if (!etatBouton5) {
+        else if (!etatBouton5) {
           Serial.println("b5");
         }
-        if (!etatBouton6) {
+        else if (!etatBouton6) {
           Serial.println("b6");
         }
-        if (!etatBouton7) {
+        else if (!etatBouton7) {
           Serial.println("b7");
         }
-        if (!etatBouton8) {
+        else if (!etatBouton8) {
           Serial.println("b8");
         }
-        if (!etatBouton9) {
+        else if (!etatBouton9) {
           Serial.println("b9");
         }
       }
