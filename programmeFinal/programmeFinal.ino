@@ -103,13 +103,13 @@ void setup() {
       delay(200);
 
       // Code à exécuter pour le profil_1 sous windows
-      if (profilSelectionner == 1 or !etatBoutonProfil and profilSelectionner == 1) {
+      if (profilSelectionner == 1 or !etatBoutonProfil and profilSelectionner == 2) {
         Serial.println("p1");
         digitalWrite(pinLedBleuProfil1,HIGH);
         for (int c = 42; c < 51; c++){
           digitalWrite(c, HIGH);
         }
-        profilSelectionner = 2;
+        profilSelectionner = 1;
         delay(200);
 
         // Code à exécuter en cas d'appuis sur les boutons poussoirs
