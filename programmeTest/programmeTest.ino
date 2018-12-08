@@ -1,45 +1,29 @@
-/*Définition de variables
- * boutonVerifOs
- * boutonProg1
- * boutonProg2
- * boutonProg3
- * boutonProg4
- * boutonProg5
- * boutonProg6
- * boutonProg7
- * boutonProg8
- * boutonProg9
- */
 
- int pinBouton = 2, pinLedRouge = 5, pinLedVerte = 4;
- bool testBouton = true;
- 
+// NE PAS TÉLÉVERSER AVEC VISUAL STUDIO CODE !!!!!!!!!
+// UTILISER L'IDE ARDUINO DE BASE
+
+
+int pinLed1 = 24;
+int pinLed2 = 25;
+int pinLed3 = 26;
+int pinLed4 = 27;
+int pinLed5 = 28;
+int pinLed6 = 29;
+int pinLed7 = 30;
+int pinLed8 = 31;
+int pinLed9 = 32;
+
 void setup() {
-  Serial.begin(9600);
-  pinMode(pinLedRouge, OUTPUT);
-  pinMode(pinLedVerte, OUTPUT);
-  pinMode(pinBouton, INPUT_PULLUP);
+  for (int i = 24; i < 33; i++) {
+    pinMode(i, OUTPUT);
+  }
   
 }
  void loop() {
-  //Serial.println(testBouton);
-  //Serial.println("l");
-  //delay(2000);
-  if (testBouton) {
-    digitalWrite(pinLedRouge, HIGH);
-    digitalWrite(pinLedVerte, LOW);
+  for (int e = 24; e < 33; e++) {
+    digitalWrite(e, HIGH);
+    delay(1500);
+    digitalWrite(e, LOW);
+    delay(1500);
   }
-  else {
-    digitalWrite(pinLedRouge, LOW);
-    digitalWrite(pinLedVerte, HIGH);
-  }
-  bool etatBouton = digitalRead(pinBouton);
-  //Serial.println(etatBouton);
-  if (!etatBouton) {
-    digitalWrite(pinLedRouge, LOW);
-    digitalWrite(pinLedVerte, HIGH);
-    Serial.println("1");
-  }
-  delay(200);
-  Serial.flush();
 }

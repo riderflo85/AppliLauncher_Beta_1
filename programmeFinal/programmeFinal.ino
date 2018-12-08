@@ -5,6 +5,8 @@ Date de création: 04/07/2018
 Creer par: GRENAILLE Florent
 Licence: OpenSource/Libre
 Source: https://github.com/riderflo85/AppliLauncher_Beta_1
+Infos:    NE PAS TÉLÉVERSER AVEC VISUAL STUDIO CODE !!!!!!!!!
+          UTILISER L'IDE ARDUINO DE BASE
 */
 // Déclaration des variables
 int pinBoutonOs = 22;
